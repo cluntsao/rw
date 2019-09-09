@@ -2,7 +2,17 @@ module.exports = {
   siteMetadata: {
     title: `Republic of Waterfowl`,
     description: `YOUR TOTAL RESOURCE FOR WATERFOWL HUNTING IN TEXAS`,
-    author: `@gatsbyjs`,
+    author: `Ericsson Tsao`,
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/'
+      },
+      {
+        name: `about`,
+        link: '/page-2'
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,4 +41,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
+  pathPrefix: "/rw",
 }
